@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alpha-signal-framework"
+version = "1.0.0"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.24.0", "pandas>=2.0.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4.0", "pytest-cov>=4.1.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=src/alpha_signal_framework --cov-report=term-missing"
