@@ -1,7 +1,7 @@
 """Walk-forward backtesting engine with realistic execution."""
 
 import logging
-from typing import Dict, Tuple, Optional
+from typing import Dict
 
 import numpy as np
 import pandas as pd

@@ -14,7 +14,6 @@ from alpha_signal_framework.signals import (
     volatility_signal,
     combine_signals,
     compute_risk_metrics,
-    MIN_LOOKBACK,
 )
 
 

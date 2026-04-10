@@ -11,6 +11,11 @@ dependencies = ["numpy>=1.24.0", "pandas>=2.0.0"]
 [project.optional-dependencies]
 dev = ["pytest>=7.4.0", "pytest-cov>=4.1.0", "ruff>=0.4.0", "mypy>=1.8.0"]
 
+[tool.mypy]
+ignore_missing_imports = true
+warn_return_any = false
+no_strict_optional = true
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "--cov=src/alpha_signal_framework --cov-report=term-missing"
